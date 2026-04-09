@@ -185,7 +185,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.000004
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -617,13 +617,70 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380286742342471812, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: maxSpeed
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1367535168}
   m_SourcePrefab: {fileID: 100100000, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+--- !u!146 &1367535163 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 8706808774334851022, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+  m_PrefabInstance: {fileID: 1367535162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &1367535164 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 8615825633152659129, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+  m_PrefabInstance: {fileID: 1367535162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &1367535165 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 7877667524431639919, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+  m_PrefabInstance: {fileID: 1367535162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &1367535166 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 2239677824950174677, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+  m_PrefabInstance: {fileID: 1367535162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1367535167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+  m_PrefabInstance: {fileID: 1367535162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1367535168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367535167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364e0863912d77943997185303674a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PrometheusCarPhysics
+  WC_FrontLeft: {fileID: 1367535166}
+  WC_FrontRight: {fileID: 1367535165}
+  WC_RearLeft: {fileID: 1367535164}
+  WC_RearRight: {fileID: 1367535163}
+  carMass: 900
+  centerOfMass: {x: 0, y: -0.5, z: 0.1}
+  angularDrag: 0.15
+  suspensionSpring: 38000
+  suspensionDamper: 4200
+  suspensionTarget: 0.3
+  suspensionDistance: 0.15
+  antiRollFront: 5000
+  antiRollRear: 4000
+  downforceMax: 800
+  downforceMaxSpeed: 150
+  airStabTorque: 15
+  airRotForce: 4
 --- !u!1 &1777418082
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +763,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 60.000004
+    FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
