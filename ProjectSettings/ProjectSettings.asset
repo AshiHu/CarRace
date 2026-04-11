@@ -825,7 +825,25 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    EmbeddedLinux: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    GameCoreScarlett: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    GameCoreXboxOne: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    Kepler: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    LinuxHeadlessSimulation: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    Nintendo Switch: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    Nintendo Switch 2: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    PS4: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    PS5: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    QNX: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    Standalone: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    VisionOS: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    WebGL: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    Windows Store Apps: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    XboxOne: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    iPhone: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
+    tvOS: BCG_RCCP;BCG_RCCP_LITE;BCG_URP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
